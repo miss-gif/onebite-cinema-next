@@ -1,7 +1,12 @@
-import React from "react";
+import SearchableLayout from "@/components/searchable-layout";
+import React, { ReactNode } from "react";
 
-const index = () => {
-  return <div className="text-xl font-bold">ONEBITE CINEMA</div>;
+const Home = () => {
+  return <div></div>;
 };
 
-export default index;
+export default Home;
+
+Home.getLayout = (page: ReactNode) => {
+  return <SearchableLayout>{page}</SearchableLayout>;
+};

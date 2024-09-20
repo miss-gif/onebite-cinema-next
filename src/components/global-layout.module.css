@@ -1,0 +1,11 @@
+.container {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+.header {
+  color: rgb(229, 9, 20);
+  font-size: 20px;
+}
