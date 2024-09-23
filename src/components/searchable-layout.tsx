@@ -28,7 +28,7 @@ const SearchableLayout = ({ children }: { children: ReactNode }) => {
 
   return (
     <div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 pt-3 pb-8">
         <input
           className="border border-gray-500 rounded-sm p-2 bg-black w-full text-xs"
           type="text"
@@ -38,7 +38,7 @@ const SearchableLayout = ({ children }: { children: ReactNode }) => {
           onChange={onChangeSearch}
         />
         <button
-          className="border border-gray-500 rounded-sm px-5 py-3 bg-gray-500 text-xs flex-shrink-0"
+          className="border border-gray-700 rounded-sm px-5 py-3 bg-gray-700 text-xs flex-shrink-0"
           onClick={onSubmit}
         >
           검색

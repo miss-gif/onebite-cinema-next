@@ -14,7 +14,7 @@ const MovieItem = ({
   posterImgUrl,
 }: MovieData) => {
   return (
-    <Link href={`/book/${id}`} className="flex">
+    <Link href={`/movie/${id}`} className="flex">
       <img src={posterImgUrl} alt={title} />
     </Link>
   );
