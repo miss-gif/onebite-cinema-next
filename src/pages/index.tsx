@@ -1,7 +1,7 @@
-import SearchableLayout from "@/components/searchable-layout";
-import React, { ReactNode } from "react";
-import dummy from "@/mock/dummy.json";
 import MovieItem from "@/components/movie-item";
+import SearchableLayout from "@/components/searchable-layout";
+import dummy from "@/mock/dummy.json";
+import { ReactNode } from "react";
 
 const Home = () => {
   return (
@@ -9,8 +9,8 @@ const Home = () => {
       <section className="flex flex-col gap-3">
         <h3 className="text-lg font-bold">지금 가장 추천하는 영화</h3>
         <div className="grid grid-cols-3 gap-1">
-          {dummy.map((movie) => (
-            <MovieItem key={movie.id} {...movie} />
+          {dummy.slice(0, 3).map((movie) => (
+            <MovieItem key={`reco-${movie.id}`} {...movie} />
           ))}
         </div>
       </section>
@@ -19,7 +19,7 @@ const Home = () => {
         <h3 className="text-lg font-bold">등록된 모든 영화</h3>
         <div className="grid grid-cols-5 gap-1">
           {dummy.map((movie) => (
-            <MovieItem key={movie.id} {...movie} />
+            <MovieItem key={`all-${movie.id}`} {...movie} />
           ))}
         </div>
       </section>
